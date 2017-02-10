@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NeuroSkyTest</string>
+    <string name="deltaString">Delta Wave</string>
+    <string name="startText">Start</string>
+    <string name="stopText">Stop</string>
+    <string name="selectDeviceText">Select Device</string>
+</resources>

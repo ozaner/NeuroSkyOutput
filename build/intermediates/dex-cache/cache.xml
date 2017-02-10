@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Weegee 64\Source Code\Android\NeuroSkyTest\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.0.0-beta1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="3c0208faf42864e6695345e64d1b955070263819">
+        <dex dex="C:\Users\Weegee 64\Source Code\Android\NeuroSkyTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.0.0-beta1_c01e9f1cc9e47c180cda0fafb6307271e62b4015\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Weegee 64\Source Code\Android\NeuroSkyTest\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0-beta1\jars\libs\internal_impl-24.0.0-beta1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="23d564c059873f398dc5d967f56791a66472ce76">
+        <dex dex="C:\Users\Weegee 64\Source Code\Android\NeuroSkyTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.0.0-beta1_6edb64120e160549d69b39ee7507b893de30559d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Weegee 64\Source Code\Android\NeuroSkyTest\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.0.0-beta1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="97f82fd0c185bd2881a93646954f2429be4baa86">
+        <dex dex="C:\Users\Weegee 64\Source Code\Android\NeuroSkyTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.0.0-beta1_dbcadfbce561855ca81f0ffc85d41f0117ebe725\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Weegee 64\Source Code\Android\NeuroSkyTest\app\libs\libStreamSDK_v1.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="033b7351fc2173a9ac8e82a355c877495759eb67">
+        <dex dex="C:\Users\Weegee 64\Source Code\Android\NeuroSkyTest\app\build\intermediates\transforms\dex\debug\folders\1000\2\libStreamSDK_v1.2.0_be87db480a3e1806097a2a07d02b2c3cfda38cfc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Weegee 64\Source Code\Android\NeuroSkyTest\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.0.0-beta1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="8d3137a71200c47974c0454ae8ad272a09c533eb">
+        <dex dex="C:\Users\Weegee 64\Source Code\Android\NeuroSkyTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.0.0-beta1_b95ca8e50a87c32028b64e585bb4a3248e515449\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Weegee 64\Source Code\Android\NeuroSkyTest\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="19982054aa1cdb007183b8cfb796f071138541aa">
+        <dex dex="C:\Users\Weegee 64\Source Code\Android\NeuroSkyTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_eb174df5fbbd7dd6aa3d810cf34eb4115343fdae\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Weegee 64\Source Code\Android\NeuroSkyTest\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e25a0d20dfbdf2d172ed305c76fada0b4d2a6fe4">
+        <dex dex="C:\Users\Weegee 64\Source Code\Android\NeuroSkyTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_cfe76f353b76875052591772c3cfbdb24ffc8654\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Weegee 64\Source Code\Android\NeuroSkyTest\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0-beta1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f81eecb8d5e9e548f75f277830a94a9b37fbb987">
+        <dex dex="C:\Users\Weegee 64\Source Code\Android\NeuroSkyTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.0.0-beta1_feb6fe24526087cd727486c1f62e075e9307381a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.0.0-beta1\support-annotations-24.0.0-beta1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="04705c19cdec60364bc04e2e928c274da1ba301b">
+        <dex dex="C:\Users\Weegee 64\Source Code\Android\NeuroSkyTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.0.0-beta1_ca993c176c051d24292944d140742a63190bd433\classes.dex" />
+    </item>
+
+</items>
