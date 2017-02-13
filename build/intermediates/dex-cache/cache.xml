@@ -52,7 +52,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="19982054aa1cdb007183b8cfb796f071138541aa">
+        sha1="217c32ecefa17f6a794022234c00e9fa95b00059">
         <dex dex="C:\Users\Weegee 64\Source Code\Android\NeuroSkyTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_eb174df5fbbd7dd6aa3d810cf34eb4115343fdae\classes.dex" />
     </item>
     <item
@@ -61,7 +61,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="e25a0d20dfbdf2d172ed305c76fada0b4d2a6fe4">
+        sha1="211eaf23ea9162a6647b2c95d3389e9429f50fae">
         <dex dex="C:\Users\Weegee 64\Source Code\Android\NeuroSkyTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_cfe76f353b76875052591772c3cfbdb24ffc8654\classes.dex" />
     </item>
     <item

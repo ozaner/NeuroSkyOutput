@@ -13,6 +13,7 @@ import com.neurosky.connection.TgStreamHandler;
 import com.neurosky.connection.TgStreamReader;
 
 import java.lang.reflect.Method;
+import java.util.Arrays;
 
 /**
  * TgStreamHandler implementation for this app.
@@ -47,11 +48,6 @@ public class NeuroSky implements TgStreamHandler {
      */
     private BluetoothDevice bd;
 
-    /**
-     * Address of Bluetooth device.
-     */
-    private String address = null;
-
     private Handler LinkDetectedHandler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
@@ -62,6 +58,7 @@ public class NeuroSky implements TgStreamHandler {
                 case MindDataType.CODE_EEGPOWER:
                     EEGPower power = (EEGPower)msg.obj;
                     EEGData = power.isValidate() ? power : EEGData;
+                    MainActivity.updateData();//TODO: This is temporary, make a better solution
                     break;
                 case MindDataType.CODE_POOR_SIGNAL:
                     poorSignal = msg.arg1;
@@ -81,36 +78,46 @@ public class NeuroSky implements TgStreamHandler {
     public NeuroSky (BluetoothAdapter ba, BluetoothDevice bd) {
         this.ba = ba;
         this.bd = bd;
+        tgStreamReader = createStreamReader(bd);
     }
 
     /**
      * Returns the power of a given brainwave at the moment.
-     * @param type - Brainwave Type string, defined by WAVE_LIST
+     * @param ID - Brainwave Type ID, defined by WAVE_LIST
      * @return that brainwaves' power at the moment.
      */
-    public int getWavePower(String type) {
+    public int getWavePower(int ID) {
         if(EEGData != null)
-            switch(type) {
-                case "delta":
+            switch(ID) {
+                case 0:
                     return EEGData.delta;
-                case "theta":
+                case 1:
                     return EEGData.theta;
-                case "lowAlpha":
+                case 2:
                     return EEGData.lowAlpha;
-                case "highAlpha":
+                case 3:
                     return EEGData.highAlpha;
-                case "lowBeta":
+                case 4:
                     return EEGData.lowBeta;
-                case "highBeta":
+                case 5:
                     return EEGData.highBeta;
-                case "lowGamma":
+                case 6:
                     return EEGData.lowGamma;
-                case "middleGamma":
+                case 7:
                     return EEGData.middleGamma;
                 default:
                     return -1;
-        }
+            }
         return -1;
+    }
+
+    /**
+     * Returns the power of a given brainwave at the moment.
+     * @param type - Brainwave Type ID, defined by WAVE_LIST
+     * @return that brainwaves' power at the moment.
+     */
+    public int getWavePower(String type) {
+        return getWavePower(Arrays.asList(BRAINWAVE_TYPES).indexOf(type));
     }
 
     @Override
@@ -137,20 +144,13 @@ public class NeuroSky implements TgStreamHandler {
     @Override
     public void onRecordFail(int i) {}
 
-    private void start(){
-        BluetoothDevice bd = ba.getRemoteDevice(address);
-        createStreamReader(bd);
-
-        tgStreamReader.connectAndStart();
-    }
-
     /**
      * If the TgStreamReader is created, just change the bluetooth
      * else create TgStreamReader, set data receiver, TgStreamHandler and parser
      * @param bd
      * @return TgStreamReader
      */
-    public TgStreamReader createStreamReader(BluetoothDevice bd){
+    private TgStreamReader createStreamReader(BluetoothDevice bd){
         if(tgStreamReader == null){
             tgStreamReader = new TgStreamReader(bd,this);
             tgStreamReader.startLog();
@@ -162,9 +162,18 @@ public class NeuroSky implements TgStreamHandler {
     }
 
     /**
+     * Starts and connects to bluetooth device, given in constructor.
+     */
+    public void start(){
+        createStreamReader(bd);
+
+        tgStreamReader.connectAndStart();
+    }
+
+    /**
      * Destroys the tgStreamReader object if one exists. Only 1 should exist at any one time.
      */
-    private void closeNeuroSky() {
+    public void stop() {
         if(tgStreamReader!= null){
             tgStreamReader.stop();
             tgStreamReader.close();
